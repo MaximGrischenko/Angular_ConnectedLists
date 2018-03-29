@@ -1,0 +1,16 @@
+.nav-link {
+  width: 210px;
+  min-height: 40px;
+  border-radius: 5px;
+}
+
+.nav-link input[type='button']{
+  font-size: 18px;
+  font-family: ProximaNovaBold, sans-serif;
+  opacity: 0.8;
+}
+
+.nav-link input[type='button'] :hover {
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}

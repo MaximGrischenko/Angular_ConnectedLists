@@ -1,0 +1,13 @@
+<div class="container-fluid">
+  <section class="row no-gutters galary">
+    <div *ngFor="let item of galaryContent" class="content col-lg-2 col-md-4 col-sm-6 col-xs-6">
+      <img class="img-fluid" src={{item.url}}>
+      <div class="cover">
+        <img class="img-fluid" src={{item.url}}>
+        <a href="#">
+          <i style="font-size: 16px" class="fa fa-instagram"> #hotdogs</i>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>

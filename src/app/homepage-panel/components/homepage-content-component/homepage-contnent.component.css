@@ -1,0 +1,86 @@
+.colapsefix:before {
+  content: "";
+  display: block;
+  overflow: hidden;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.content > [class*='col-'] {
+  display: flex;
+}
+.content .description {
+  padding: 0 110px;
+  background-color: #ffffff;
+}
+.content .description h2 {
+  margin: 0 0 30px 0;
+  color: #555559;
+  font-family: OpenSansBold, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.content .description h2:before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 30px;
+  background-color: #286782;
+  position: absolute;
+  top: 12px;
+  left: 60px;
+}
+.content .description p {
+  margin: 0;
+  color: #555559;
+  font-family: OpenSansLight, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+.content .presentation img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar ul {
+    min-height: 90px;
+  }
+  .navbar ul li {
+    line-height: 90px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar ul {
+    min-height: 80px;
+  }
+  .navbar ul li {
+    line-height: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .navbar ul {
+    min-height: 70px;
+  }
+  .navbar ul li {
+    line-height: 70px;
+  }
+}
+@media (max-width: 480px) {
+  .navbar ul {
+    min-height: 60px;
+  }
+  .navbar ul li {
+    line-height: 60px;
+  }
+}

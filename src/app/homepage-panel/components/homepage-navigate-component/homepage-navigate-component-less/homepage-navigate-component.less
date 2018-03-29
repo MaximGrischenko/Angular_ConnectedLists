@@ -1,0 +1,46 @@
+@import "../../../../../assets/less/components/help.less";
+@import "../../../../../assets/less/components/mixins.less";
+@import "../../../../../assets/less/components/variables.less";
+
+.navbar {
+  padding: 0;
+  z-index: 1;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    min-height: 100px;
+    background-color: @navigation-background-color;
+    box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.11);
+
+    li {
+      line-height: 100px;
+      text-align: center;
+
+      a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: @navigation-link-color;
+
+        &:hover {
+          color: @navigation-link-hover-color;
+        }
+
+        &.active {
+          color: red;
+        }
+
+        p {
+          margin: 0;
+          font-family: OpenSansBold, sans-serif;
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+@import "homepage-navigate-mobile.less";
+

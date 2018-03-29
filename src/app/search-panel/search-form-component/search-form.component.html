@@ -1,0 +1,13 @@
+<section class="wrapper">
+  <form class="search-form form-inline" (ngSubmit)="onSubmit();  userForm.reset()" #userForm='ngForm'>
+
+    <div class="form-group">
+    <input type="text" class="form-control" name="search" id="search" placeholder="Search..."
+           #search="ngModel" [(ngModel)]="searchStr"  required>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="search.invalid">
+      <i class="fa fa-search"></i>
+    </button>
+  </form>
+  <div [hidden]="!message.length" class="alert alert-danger">{{message}}</div>
+</section>

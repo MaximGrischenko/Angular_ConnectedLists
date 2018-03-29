@@ -1,0 +1,8 @@
+<section class="wrapper">
+  <strong>Template String</strong>
+  <div class="template-string">
+    <span class="search-string" *ngFor="let partString of templateString" [ngClass]="{'IsFind': partString.finded}">
+      {{ partString.title}}
+    </span>
+  </div>
+</section>

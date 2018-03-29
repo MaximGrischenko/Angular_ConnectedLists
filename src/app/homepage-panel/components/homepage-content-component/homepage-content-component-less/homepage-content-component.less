@@ -1,0 +1,59 @@
+@import "../../../../../assets/less/components/help.less";
+@import "../../../../../assets/less/components/mixins.less";
+@import "../../../../../assets/less/components/variables.less";
+
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  & > [class*='col-'] {
+    display: flex;
+  }
+
+  .description {
+    padding: 0 110px;
+    background-color: @content-background-color;
+
+    h2 {
+      margin: 0 0 30px 0;
+      color: @content-h2-color;
+      font-family: OpenSansBold, sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+
+      &:before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 30px;
+        background-color: #286782;
+        position: absolute;
+        top: 12px;
+        left: 60px;
+      }
+    }
+
+    p {
+      margin: 0;
+      color: @content-p-color;
+      font-family: OpenSansLight, sans-serif;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .presentation {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@import "homepage-content-mobile.less";
+

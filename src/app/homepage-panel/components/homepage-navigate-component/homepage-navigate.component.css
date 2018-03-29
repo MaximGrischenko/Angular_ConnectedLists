@@ -1,0 +1,76 @@
+.colapsefix:before {
+  content: "";
+  display: block;
+  overflow: hidden;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.navbar {
+  padding: 0;
+  z-index: 1;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-height: 100px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.11);
+}
+.navbar ul li {
+  line-height: 100px;
+  text-align: center;
+}
+.navbar ul li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #2e2e2e;
+}
+.navbar ul li a:hover {
+  color: #8fd7d4;
+}
+.navbar ul li a.active {
+  color: red;
+}
+.navbar ul li a p {
+  margin: 0;
+  font-family: OpenSansBold, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar ul {
+    min-height: 90px;
+  }
+  .navbar ul li {
+    line-height: 90px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar ul {
+    min-height: 80px;
+  }
+  .navbar ul li {
+    line-height: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .navbar ul {
+    min-height: 70px;
+  }
+  .navbar ul li {
+    line-height: 70px;
+  }
+}
+@media (max-width: 480px) {
+  .navbar ul {
+    min-height: 60px;
+  }
+  .navbar ul li {
+    line-height: 60px;
+  }
+}
